@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHIRAG B J | Student & Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <!-- THIS IS THE NEW LINE -->
+            <p class="hero-intro">Welcome To My Digital Portfolio</p>
+            
+            <h1 class="name-title">CHIRAG B J</h1>
+            <p>I'm an <span class="typing-effect"></span></p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section id="about" class="reveal">
+            <h2><span class="highlight">01.</span> About Me</h2>
+            <p>
+                I am a passionate and dedicated Bachelor of Computer Science student at <strong>KLE's Society Degree College</strong> with an expected graduation in <strong>2026</strong>. An aspiring software developer passionate about problem-solving, I am a proactive learner, constantly honing my skills through personal projects and a growing list of professional certifications. I am eager to apply my academic knowledge and technical skills to solve real-world problems.
+            </p>
+        </section>
+
+        <section id="certificates" class="reveal">
+            <h2><span class="highlight">02.</span> My Certifications</h2>
+            <div class="card-container">
+                <!-- Certificate 1: Added data-image attribute -->
+                <div class="card clickable" data-image="{{ url_for('static', filename='images/flutter_cert.png') }}">
+                    <h3>APP Development using Flutter</h3>
+                    <p>Completed a comprehensive course on building cross-platform mobile applications using Google's Flutter framework.</p>
+                </div>
+                <!-- Certificate 2: Added data-image attribute -->
+                <div class="card clickable" data-image="{{ url_for('static', filename='images/ai_cert.png') }}">
+                    <h3>Generative AI Tools</h3>
+                    <p>Gained foundational knowledge and practical skills in utilizing various Generative AI tools and platforms.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2><span class="highlight">03.</span> My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Python</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">Git</div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+             <h2><span class="highlight">04.</span> Get In Touch</h2>
+             <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+             <a href="mailto:youremail@example.com" class="button">Say Hello</a>
+             <div class="social-links">
+                <a href="https://www.linkedin.com/in/chirag-bj" target="_blank">LinkedIn</a>
+             </div>
+        </section>
+
+    </main>
+    
+    <!-- MODAL POPUP STRUCTURE (Hidden by default) -->
+    <div id="imageModal" class="modal">
+        <span class="close-button">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
