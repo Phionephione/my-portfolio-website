@@ -11,9 +11,7 @@
 
     <header class="hero">
         <div class="hero-content">
-            <!-- THIS IS THE NEW LINE -->
             <p class="hero-intro">Welcome To My Digital Portfolio</p>
-            
             <h1 class="name-title">CHIRAG B J</h1>
             <p>I'm an <span class="typing-effect"></span></p>
         </div>
@@ -31,31 +29,47 @@
         <section id="certificates" class="reveal">
             <h2><span class="highlight">02.</span> My Certifications</h2>
             <div class="card-container">
-                <!-- Certificate 1: Added data-image attribute -->
+                
                 <div class="card clickable" data-image="{{ url_for('static', filename='images/sofeng_cert.png') }}">
-                    <h3>Software Engeering From EA (Job Simulation)</h3>
-                    <p>Patched a bugfix and optimized the EA Sports College Football codebase by implementing an improved data structure and Patched a bugfix and optimized codebase by implementing an improved data structure.</p>
+                    <h3>Software Engineering From EA (Job Simulation)</h3>
+                    <p>Patched a bugfix and optimized the EA Sports College Football codebase by implementing an improved data structure.</p>
                 </div>
-                <!-- Certificate 2: Added data-image attribute -->
+               
                 <div class="card clickable" data-image="{{ url_for('static', filename='images/genai_cert.png') }}">
                     <h3>Generative AI Tools</h3>
                     <p>Gained foundational knowledge and practical skills in utilizing various Generative AI tools and platforms.</p>
                 </div>
-                <!-- Certificate 3: Added data-image attribute -->
+                
                 <div class="card clickable" data-image="{{ url_for('static', filename='images/amazon_cert.png') }}">
                     <h3>Solutions Architecture From AWS (Job Simulation)</h3>
                     <p>Designed and simple and scalable hosting architecture based on Elastic Beanstalk for a client experiencing significant growth and slow response times.</p>
                 </div>
-                <!-- Certificate 4: Added data-image attribute -->
+               
                 <div class="card clickable" data-image="{{ url_for('static', filename='images/web_cert.png') }}">
-                    <h3>Web Development From City Of Moreton Bay(Job Simulation)</h3>
-                    <p>Completed a job simulation involving website planning and creation. Created a sitemap and userflow using a diagram creation tool.Used HTML & CSS to create a landing page.</p>
+                    <h3>Web Development From City of Moreton Bay (Job Simulation)</h3>
+                    <p>Completed a job simulation involving website planning and creation. Created a sitemap and userflow using a diagram creation tool. Used HTML & CSS to create a landing page.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h2><span class="highlight">03.</span> My Projects</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Student Assistant Chatbot</h3>
+                    <p>A helpful chatbot designed to assist students by answering common questions, providing resources, and offering guidance on academic matters.</p>
+                    <a href="https://student-assistant-chatbot-8u56.onrender.com" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>WeebVibe</h3>
+                    <p>A web application for anime and manga enthusiasts to discover new series, track their watch progress, and engage with a community of fans.</p>
+                    <a href="https://weebvibe.onrender.com" class="project-link" target="_blank" rel="noopener noreferrer">View Project</a>
                 </div>
             </div>
         </section>
 
         <section id="skills" class="reveal">
-            <h2><span class="highlight">03.</span> My Skills</h2>
+            <h2><span class="highlight">04.</span> My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-item">Python</div>
                 <div class="skill-item">Java</div>
@@ -65,9 +79,9 @@
         </section>
 
         <section id="contact" class="reveal">
-             <h2><span class="highlight">04.</span> Get In Touch</h2>
+             <h2><span class="highlight">05.</span> Get In Touch</h2>
              <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
-             <a href="https://www.instagram.com/_._chirag5_._" class="button">Say Hello</a>
+             <a href="mailto:youremail@example.com" class="button">Say Hello</a>
              <div class="social-links">
                 <a href="https://www.linkedin.com/in/chirag-bj" target="_blank">LinkedIn</a>
              </div>
@@ -75,12 +89,10 @@
 
     </main>
     
-    <!-- MODAL POPUP STRUCTURE (Hidden by default) -->
     <div id="imageModal" class="modal">
         <span class="close-button">&times;</span>
         <img class="modal-content" id="modalImage">
     </div>
-
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 </html>
